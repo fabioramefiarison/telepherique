@@ -1,0 +1,13 @@
+{
+  
+  "header": {
+      "li1": "Acceuil", 
+      "li2": "restaurant", 
+      "li3": "Voyage",
+      "li4": "Apropos", 
+      "language": "FR",
+      "btnInscrire": "S'inscrire",
+      "btnConnecter": "Connecter" 
+  }
+
+}
