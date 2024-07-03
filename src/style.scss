@@ -34,6 +34,7 @@ $color-jaune: #ffb703;
 .logo img{
    width: 40px;
    border-radius: 4px;
+   border: 1px solid $color-vert;
 }
 #container-header nav ul{
    display: flex;
@@ -195,8 +196,7 @@ $color-jaune: #ffb703;
 }
 .container-cont section:nth-child(1) ul {
    display: flex;
-   max-width: 600px;
-   overflow: auto;
+   flex-wrap: wrap;
 }
 .section2 > div {
    display: grid;
@@ -204,7 +204,8 @@ $color-jaune: #ffb703;
 }
 .container-cont section:nth-child(1) ul li {
    list-style: none;
-   margin-left: 5px;
+   margin: 5px;
+   margin-top: 0;
    padding: 4px;
    font-size: 15px;
    color: white;
@@ -298,7 +299,7 @@ $color-jaune: #ffb703;
    border-radius: 40px;
    transform: translateY(13px);
 }
-#btn-valider-trajet{
+#btn-valider-trajet, #btn-imprimer{
    background-color: $color-vert;
    color: white;
    border: none;
@@ -308,7 +309,7 @@ $color-jaune: #ffb703;
    margin-top: 5px;
    cursor: grab;
 }
-#btn-valider-trajet:hover{
+#btn-valider-trajet:hover, #btn-imprimer:hover{
    opacity: 0.8;
 }
 .alerte{
@@ -327,7 +328,7 @@ $color-jaune: #ffb703;
    }
 }
 #ticket{
-   width: 50vw;
+   width: 700px;
    height: 240px;
    margin: 20px;
    background-color: white;
@@ -336,6 +337,7 @@ $color-jaune: #ffb703;
    grid-template-columns: 30% 50% 20%;
    padding: 10px;
    border-radius: 12px;
+   display: none;
 }
 #ticket {
    section {
@@ -377,7 +379,7 @@ $color-jaune: #ffb703;
 
 @media screen and (max-width: 800px) {
 #container-baniere{
-      background-image: url("./images/telepherique2.JPG");
+ background-image: url("./images/telepherique2.JPG");
 }
 #container-header nav ul {
    display: none;
@@ -392,7 +394,16 @@ $color-jaune: #ffb703;
 #container-container h1{
    margin-bottom: 40px;
 }
-
+#container-header{
+   padding: 10px 10px;
+}
+.logo {
+   font-size: 10px;
+   flex-basis: 20%;
+}
+.logo img{
+   width: 30px;
+}
 @keyframes uldisplay {
    0%{
       transform: translateY(-100vh);
@@ -430,7 +441,13 @@ $color-jaune: #ffb703;
 .switch-lang {
    transform: translateX(5vw);
 }
-
+.les-btn input{
+   width: 70px;
+   height: 30px;
+   font-size: 14px;
+   color: $main-text;
+   border: none;
+}
 
 .container-cont section:nth-child(2) {
    flex-wrap: wrap;
@@ -475,4 +492,18 @@ $color-jaune: #ffb703;
 #container-container {
    margin-top: 24vh;
 }
+}
+
+
+@media screen and (max-width: 600px) {
+   .date-voyage ,#passagere {
+      width: 140px;
+      height: 30px;
+   }
+   .dropdown {
+      button {
+         width: 140px;
+         height: 30px;  
+      }
+   }
 }
