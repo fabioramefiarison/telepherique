@@ -337,7 +337,8 @@ $color-jaune: #ffb703;
    grid-template-columns: 30% 50% 20%;
    padding: 10px;
    border-radius: 12px;
-   display: none;
+   position: absolute;
+   z-index: -20;
 }
 #ticket {
    section {
