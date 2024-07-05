@@ -95,6 +95,7 @@ const handleClose = () => {
          </nav>
          <nav>
             <i className="fas fa-bars" 
+            style={ulDisplay ? {display: 'none'} : {display: "block"}}
             onClick={handleClickMenu}></i>
          </nav>
          <nav

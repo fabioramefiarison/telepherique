@@ -8,12 +8,14 @@ $main-text: #003049;
 $red-background: #d62828;
 $color-vert: #0a9395; 
 $color-jaune: #ffb703;
-
+#all{
+   overflow-x: hidden;
+}
 #container-baniere{
    background-image: url("./images/telepherique.jpg");
    background-size: cover;
    background-repeat: no-repeat;
-   width: 100vw;
+   width: 99vw;
    height: 100vh;
    overflow-x: hidden;
 }
@@ -22,11 +24,12 @@ $color-jaune: #ffb703;
    justify-content: space-between;
    align-items: center;
    padding: 15px 15px;
-   position: sticky;
-   top: -5px;
-   z-index: 9;
+   position: fixed;
+   top: 0;
+   z-index: 100;
    color: $main-text;
    background-color: white;
+   width: 99vw;
 }
 .logo {
    font-weight: bold;
@@ -135,15 +138,16 @@ $color-jaune: #ffb703;
    font-size: 35px;
    display: none;
    position: absolute;
-   right: 18px;
+   right: 5vw;
    color: $red-background;
+   font-weight: bold;
 }
 
 
 
 
 #container-container {
-   margin: 48vh 15px 10px 10px;
+   margin: 56vh 15px 10px 10px;
    div{
        h3{
            color: $color-vert; 
@@ -152,11 +156,8 @@ $color-jaune: #ffb703;
    h1{
       color: white;
       text-decoration: underline white;
-      transform: translateY(-8vw)
+      transform: translateY(-2vw)
 }
-}
-.V{
-   color: $red-background;
 }
 .container-cont{
    background-color: white;
@@ -337,14 +338,10 @@ $color-jaune: #ffb703;
    grid-template-columns: 30% 55% 15%;
    padding: 10px;
    border-radius: 12px;
-<<<<<<< HEAD
    position: absolute;
    top: 0;
    left: 0%;
-   z-index: -100;
-=======
->>>>>>> a9a7583b0b3b6997b237ecd11f021c9c76fc930f
-}
+   z-index: -100;}
 #ticket {
    section {
       i{
@@ -386,6 +383,7 @@ $color-jaune: #ffb703;
 @media screen and (max-width: 800px) {
 #container-baniere{
  background-image: url("./images/telepherique2.JPG");
+ overflow-y: hidden;
 }
 #container-header nav ul {
    display: none;
@@ -397,6 +395,7 @@ $color-jaune: #ffb703;
    height: 100vh;
    animation: uldisplay 0.5s ease-in-out;
 }
+
 #container-container h1{
    margin-bottom: 40px;
 }
@@ -439,6 +438,7 @@ $color-jaune: #ffb703;
 }
 #container-header nav:nth-child(6){
    display: block;
+   transform: translateX(-3vw);
 }
 .closeDisplay{
    display: block !important;
