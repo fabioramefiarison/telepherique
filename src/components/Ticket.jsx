@@ -11,7 +11,7 @@ const Ticket = React.forwardRef((props, ref) => {
          <div>
            <span><strong>n°: </strong>{props.idTicket}</span>
            <span><strong>date: </strong>{props.selectedDate ? props.selectedDate.toLocaleDateString() : ""}</span>
-           <span><strong>heure: </strong>{props.selectedDate ? props.selectedDate.toLocaleTimeString() : ""}</span>
+           <span><strong>heure: </strong>{props.selectedDate ? props.selectedTime :""}</span>
          </div>
          <div className='parent-cabine-vers-de'>
            <div className='cabine-vers-de'>

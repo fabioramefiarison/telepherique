@@ -11,6 +11,7 @@ function Container() {
   const [selectedOption1, setSelectedOption1] = useState('Anosy');
   const [selectedOption2, setSelectedOption2] = useState('Ambatobe');
   const [selectedDate, setselectedDate] = useState(null);
+  const [selectedTime, setselectedTime] = useState(null);
   const [nombrePers, setnombrePers] = useState("");
   const [message, setMessage] = useState(null);
   const [idTicket, setIdTicket] = useState(1);
@@ -30,6 +31,7 @@ function Container() {
 
   const handleChange = (date) => {
     setselectedDate(date);
+    setselectedTime(date.getHours(), date.getMinutes(), date.getSeconds())
   };
 
   const handleNumberChange = (event) => {
@@ -58,7 +60,7 @@ function Container() {
 
   return (
     <div id='container-container'>
-      <h1><span className='V'>Voyager</span> avec téléphérique <br /><span className='V'>d'ANTANANARIVE</span></h1>
+      <h1>Voyager avec la téléphérique <br />d'ANTANANARIVE</h1>
       <div className='container-cont'>
         <section >
           <h3>Trouver votre trajet</h3>
@@ -137,16 +139,16 @@ function Container() {
         onClick={handlePrint} 
         id='btn-imprimer'
         style={btnImprimer ? {display: 'block'}: {display: 'none'}}>Imprimer</button>
+      </div>
       <Ticket 
         ref={componentRef} 
         idTicket={idTicket}
         selectedDate={selectedDate}
+        selectedTime={selectedTime}
         selectedOption1={selectedOption1}
         selectedOption2={selectedOption2}
         nombrePers={nombrePers}
       />
-      </div>
-
     </div>
   );
 }
