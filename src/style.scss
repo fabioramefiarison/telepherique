@@ -9,15 +9,17 @@ $red-background: #d62828;
 $color-vert: #0a9395; 
 $color-jaune: #ffb703;
 #all{
-   overflow-x: hidden;
+  /*overflow-x: hidden;*/
 }
 #container-baniere{
    background-image: url("./images/telepherique.jpg");
    background-size: cover;
    background-repeat: no-repeat;
-   width: 99vw;
+   width: 99%;
    height: 100vh;
    overflow-x: hidden;
+   margin: auto;
+
 }
 #container-header{
    display: flex;
@@ -29,7 +31,7 @@ $color-jaune: #ffb703;
    z-index: 100;
    color: $main-text;
    background-color: white;
-   width: 99vw;
+   width: 100%;
 }
 .logo {
    font-weight: bold;
@@ -147,7 +149,7 @@ $color-jaune: #ffb703;
 
 
 #container-container {
-   margin: 56vh 15px 10px 10px;
+   margin: 373px auto auto auto;
    div{
        h3{
            color: $color-vert; 
@@ -155,17 +157,17 @@ $color-jaune: #ffb703;
    }
    h1{
       color: white;
-      text-decoration: underline white;
-      transform: translateY(-2vw)
+      transform: translate(4px, -2vw);
 }
 }
 .container-cont{
    background-color: white;
    color: $main-text;
-   width: 100%;
+   width: 99%;
    height: 100%;
-   border-radius: 6px;
+   border-radius: 4px;
    padding: 10px;
+   margin: auto;
 }
 .container-cont::before{
    content: "PAF: 3 000ar";
@@ -341,7 +343,8 @@ $color-jaune: #ffb703;
    position: absolute;
    top: 0;
    left: 0%;
-   z-index: -100;}
+   z-index: -100;
+   display: none;}
 #ticket {
    section {
       i{
@@ -380,10 +383,74 @@ $color-jaune: #ffb703;
 
 
 
+
+
+/************************ Popular place ***************/
+#PopularPlace {
+   margin: 60px auto;
+   color: $main-text;
+   h1{
+      text-align: center;
+      color: $color-jaune;
+   }
+   p{
+      text-align: center;
+      margin-bottom: 20px;
+   }
+ section {
+   display: flex;
+   flex-wrap: wrap;
+ }
+}
+#colums-card {
+   flex: 0 1 32%;
+   border: 6px solid $color-vert;
+   border-radius: 4px;
+   margin: 15px auto;
+   padding: 8px;
+   cursor: grab;
+   transition: 0.3s ease;
+   &:hover{
+      background-color: $color-vert;
+   }
+   img{
+      width: 100%;
+      height: 74%;
+      border-radius: 4px;
+      margin-bottom: 5px;
+   }
+   h3{
+      color: $color-jaune;
+   }
+   p{
+      font-size: 12px;
+      text-align: left;
+   }
+}
+
+
+/***************** TABLET *****************/
+@media screen and (max-width: 1000px) {
+   #container-header nav {
+      ul{
+         li{
+            font-size: 1.5vw;
+         }
+      }
+   }
+   .logo {
+      font-size: 12px;
+   }
+}
+
+
+
+/******************* MOBILE ***********************/
 @media screen and (max-width: 800px) {
 #container-baniere{
  background-image: url("./images/telepherique2.JPG");
  overflow-y: hidden;
+ height: 100%;
 }
 #container-header nav ul {
    display: none;
@@ -395,7 +462,12 @@ $color-jaune: #ffb703;
    height: 100vh;
    animation: uldisplay 0.5s ease-in-out;
 }
-
+#container-header nav ul li {
+   font-size: 18px;
+}
+#container-container {
+   margin-top: 160px;
+}
 #container-container h1{
    margin-bottom: 40px;
 }
@@ -454,10 +526,13 @@ $color-jaune: #ffb703;
    color: $main-text;
    border: none;
 }
-
+.container-cont {
+   margin-bottom: 3px;
+}
 .container-cont section:nth-child(2) {
    flex-wrap: wrap;
 }
+
 .dropdown {
    button{
       width: 35vw;
@@ -495,21 +570,34 @@ $color-jaune: #ffb703;
 .container-cont section:nth-child(1) ul {
    margin-bottom: 20px;
 }
-#container-container {
-   margin-top: 24vh;
+
+.date-voyage ,#passagere {
+   width: 35vw;
+   height: 30px;
+}
+.dropdown {
+   button {
+      width: 35vw;
+      height: 30px;  
+   }
+}
+#colums-card {
+   flex-basis:  98%;
 }
 }
+//popular place
 
 
-@media screen and (max-width: 600px) {
+/*@media screen and (max-width: 600px) {
    .date-voyage ,#passagere {
-      width: 140px;
+      width: 35vw;
       height: 30px;
    }
    .dropdown {
       button {
-         width: 140px;
+         width: 35vw;
          height: 30px;  
       }
    }
 }
+*/

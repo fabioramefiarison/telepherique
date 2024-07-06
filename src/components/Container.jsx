@@ -7,7 +7,7 @@ import { useReactToPrint } from 'react-to-print';
 import Ticket from './Ticket';
 
 function Container() {
-  const options = ['Anosy', 'Analakely', 'Ankorondrano', 'Analamahitsy', 'Ambatobe'];
+  const options = ['Anosy', 'Analakely', 'Ankorondrano', 'Analamahitsy', 'Ambatobe', 'Ankatso'];
   const [selectedOption1, setSelectedOption1] = useState('Anosy');
   const [selectedOption2, setSelectedOption2] = useState('Ambatobe');
   const [selectedDate, setselectedDate] = useState(null);
@@ -70,6 +70,7 @@ function Container() {
             <li>Ankorondrano</li>
             <li>Analakely</li>
             <li>Anosy</li>
+           <li>Ankatso</li>
           </ul>
         </section>
         <section className='section2'>
