@@ -7,7 +7,7 @@ function CardPlace(props) {
          <h2><i className='fas fa-map-marker-alt'></i> {props.lieu}</h2>
          <h3><i className='fas fa-hotel'></i> {props.nomHotel}</h3>
          <p>à peine: {props.distance} mètres</p>
-         <p style={{float: 'right'}}>A partir de  <span style={{fontStyle: 'italic', color: '#d62828'}}>{props.prix}</span> AR</p>
+         <p style={{textAlign: 'right'}}>A partir de  <span style={{fontStyle: 'italic', color: '#d62828'}}>{props.prix}</span> AR</p>
     </div>
   )
 }
