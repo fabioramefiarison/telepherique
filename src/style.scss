@@ -387,14 +387,14 @@ $color-jaune: #ffb703;
 
 /************************ Popular place ***************/
 #PopularPlace {
-   margin: 60px auto;
+   margin: 60px 10px;
    color: $main-text;
    h1{
-      text-align: center;
+      margin-left: 5px;
       color: $color-jaune;
    }
    p{
-      text-align: center;
+      margin-left: 5px;
       margin-bottom: 20px;
    }
  section {
@@ -415,7 +415,7 @@ $color-jaune: #ffb703;
    }
    img{
       width: 100%;
-      height: 220px;
+      height: 210px;
       border-radius: 4px;
       margin-bottom: 5px;
    }
@@ -424,8 +424,24 @@ $color-jaune: #ffb703;
    }
    p{
       font-size: 12px;
-      text-align: left;
    }
+   
+      a{
+         background-color: $red-background;
+         padding: 3px;  
+         border-radius: 4px;  
+         text-decoration: none;
+         color: white;
+         &:hover{
+             opacity: 0.8;
+         }
+      }
+}
+.fa-heart{
+   position: absolute;
+   transform: translate(370px, 10px);
+   font-size: 25px;
+   color: white;
 }
 
 
@@ -581,12 +597,15 @@ $color-jaune: #ffb703;
       height: 30px;  
    }
 }
+
+//POpular place
 #colums-card {
    flex-basis:  98%;
 }
+.fa-heart {
+   transform: translate(400px, 10Px);
 }
-//popular place
-
+}
 
 /*@media screen and (max-width: 600px) {
    .date-voyage ,#passagere {

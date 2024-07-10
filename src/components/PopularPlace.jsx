@@ -1,7 +1,7 @@
 import React from 'react'
 import ibis from "./../images/ibis.jpg"
 import carlton from "./../images/carlton.jpg"
-import gastro from "./../images/gastronomie-pizza-mahazo.jpg"
+import gastro from "./../images/gastropizza.jpeg"
 import univ from "./../images/Université_d'Antananarivo.jpg"
 import ambatobe from "./../images/le-triskel-un-etablissement.jpg"
 import pietra from "./../images/gastro-pizza-analakely1.jpg"
@@ -20,14 +20,14 @@ function PopularPlace() {
         <CardPlace 
         img={ibis}
         lieu={"Ankorondrano"}
-        nomHotel={"IBIS hotêl"}
+        nomHotel={"IBIS - hotêl"}
         prix={100000}
         distance={10}
       />
             <CardPlace 
         img={carlton}
         lieu={"Anosy"}
-        nomHotel={"Carlton hotêl"}
+        nomHotel={"Carlton - hotêl"}
         distance={10}
         prix={100000}
       />

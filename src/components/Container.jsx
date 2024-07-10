@@ -75,7 +75,7 @@ function Container() {
         </section>
         <section className='section2'>
           <div>
-            <label>DE :</label>
+            <label><strong>DE :</strong></label>
             <Dropdown
               options={options}
               selectedOption={selectedOption2}
@@ -87,7 +87,7 @@ function Container() {
             <i className='fas fa-sync'></i>
           </div>
           <div>
-            <label>A :</label>
+            <label><strong>A :</strong></label>
             <Dropdown
               options={options}
               selectedOption={selectedOption1}
@@ -96,7 +96,7 @@ function Container() {
             />
           </div>
           <div>
-            <label>Date de départ :</label>
+            <label><strong>Date de départ :</strong></label>
             <DatePicker
               selected={selectedDate}
               onChange={handleChange}
@@ -112,7 +112,7 @@ function Container() {
             <i className='fas fa-sync'></i>
           </div>
           <div>
-            <label>passager :</label>
+            <label><strong>passager :</strong></label>
             <div id='passagere'>
               <input 
                 type="number" 

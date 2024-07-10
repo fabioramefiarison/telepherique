@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import {useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import drapeau from "../images/drapeau_MLG.png"
 
@@ -10,6 +10,10 @@ function Header() {
    const [showMenu, setShowMenu] = useState(false)
    const [ulDisplay, setUlDisplay] = useState(false);
 
+   useEffect(() => {
+      setElements([t("header.li1"), t("header.li2"), t("header.li3"), t("header.li4")]);
+      setElementSelectionner(t("header.li1"));
+   }, [i18n.language, t]);
 
    const handleSwitchLang = (lang) => {
       i18n.changeLanguage(lang);
