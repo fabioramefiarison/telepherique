@@ -13,9 +13,7 @@ function PopularPlace() {
       <h1>
       <i className='fas fa-hotel'></i> Hôtel, Restaurant et Lieux
       </h1>
-      <p>
-        Les endroits les plus populaires en ce moment
-      </p>
+      <h3>Les endroits les plus populaires en ce moment</h3>
         <section>
         <CardPlace 
         img={ibis}

@@ -9,7 +9,7 @@ $red-background: #d62828;
 $color-vert: #0a9395; 
 $color-jaune: #ffb703;
 #all{
-  /*overflow-x: hidden;*/
+  overflow-x: hidden;
 }
 #container-baniere{
    background-image: url("./images/telepherique.jpg");
@@ -19,7 +19,7 @@ $color-jaune: #ffb703;
    height: 100vh;
    overflow-x: hidden;
    margin: auto;
-
+   border-radius: 4px;
 }
 #container-header{
    display: flex;
@@ -157,7 +157,7 @@ $color-jaune: #ffb703;
    }
    h1{
       color: white;
-      transform: translate(4px, -2vw);
+      transform: translate(10px, -2vw);
 }
 }
 .container-cont{
@@ -393,7 +393,7 @@ $color-jaune: #ffb703;
       margin-left: 5px;
       color: $color-jaune;
    }
-   p{
+   h3{
       margin-left: 5px;
       margin-bottom: 20px;
    }
@@ -439,11 +439,75 @@ $color-jaune: #ffb703;
 }
 .fa-heart{
    position: absolute;
-   transform: translate(370px, 10px);
+   transform: translate(360px, 10px);
    font-size: 25px;
    color: white;
 }
 
+
+
+/****************** ACTUALIT2 ******************/
+#Actualites{
+   width: 99%;
+   margin: 70px auto;
+   color: $main-text;
+   > h1 {
+      text-align: center;
+      color: $color-jaune;
+      &::before{
+         content: "";
+         display: block;
+         height: 5px;
+         width: 5vw;
+         background-color: $color-jaune;
+         margin: auto;
+         transform: translate(-180px, 23px);
+      }
+      &::after{
+         content: "";
+         display: block;
+         height: 5px;
+         width: 5vw;
+         background-color: $color-jaune;
+         margin: auto;
+         transform: translate(180px, -23px);
+      }
+     }
+   h3{
+      text-align: center;
+      margin-bottom: 50px;
+   }
+
+}
+.carousel {
+   div{
+      width: 90%;
+      margin: auto;
+     section:nth-child(1){
+      float: left;
+      width: 50%;
+     }
+     section:nth-child(2){
+      float: right;
+     }
+   }
+  }
+  .carousel-h1-date{
+   display: flex;
+   justify-content: space-between;
+   h1{
+      text-align: left !important;
+      margin-bottom: 5px;
+      color: $color-vert !important;
+   }
+  }
+  .carousel-image {
+    width: 400px;
+    height: 300px;
+    border-radius: 10px;
+  }
+ 
+  
 
 /***************** TABLET *****************/
 @media screen and (max-width: 1000px) {
@@ -604,6 +668,22 @@ $color-jaune: #ffb703;
 }
 .fa-heart {
    transform: translate(400px, 10Px);
+}
+
+//ACTUALITE
+.carousel {
+   div{
+      width: 98%;
+     section:nth-child(1){
+      width: 100%;
+      float: none;
+      margin-bottom: 10px;
+     }
+     section:nth-child(2){
+      width: 100%;
+      float: none;
+     }
+   }
 }
 }
 

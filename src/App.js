@@ -5,6 +5,7 @@ import font from "./font/georgia.ttf";
 import "./font awesome/all.min.css"
 import Baniere from "./components/Baniere";
 import PopularPlace from "./components/PopularPlace";
+import Actualités from "./components/Actualités";
 
 
 
@@ -22,6 +23,7 @@ function App() {
         <Div id="all">
           <Baniere/>
           <PopularPlace/>
+          <Actualités/>
         </Div>
     )
 }
