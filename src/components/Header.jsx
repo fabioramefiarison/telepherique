@@ -1,6 +1,7 @@
 import {useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import drapeau from "../images/drapeau_MLG.png"
+import ScrollReveal from "scrollreveal";
 
 function Header() {
    const [t, i18n] = useTranslation("global");
@@ -45,6 +46,15 @@ const handleClickMenu = () => {
 const handleClose = () => {
    setUlDisplay(false)
 }
+useEffect(() => {
+   ScrollReveal().reveal(".reveal", {
+     delay: 500,
+     distance: "50px",
+     opacity: 0,
+     easing: "ease-in-out",
+     duration: 1000,
+   });
+ }, []);
 
   return (
    <>
@@ -58,7 +68,7 @@ const handleClose = () => {
             <ul className={ulDisplay ? "ul-display" : ""}>
                {
                   elements.map((element) => (
-                     <li key={element}
+                     <li key={element} 
                      style={{backgroundColor: element === elementSelectionner ? '#ffb703' : ""}}
                      onClick={() => handleClickListe(element)}>
                       {element}
@@ -93,7 +103,7 @@ const handleClose = () => {
                 />
             </div>
          </nav>
-         <nav className="les-btn">
+         <nav className="les-btn" >
             <input type="button" value={t('header.btnInscrire')} />
             <input type="button" value={t('header.btnConnecter')}  />
          </nav>

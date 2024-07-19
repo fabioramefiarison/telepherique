@@ -9,7 +9,7 @@ import CardPlace from './CardPlace'
 
 function PopularPlace() {
   return (
-    <div id='PopularPlace'>
+    <div id='PopularPlace' className="reveal">
       <h1>
       <i className='fas fa-hotel'></i> Hôtel, Restaurant et Lieux
       </h1>

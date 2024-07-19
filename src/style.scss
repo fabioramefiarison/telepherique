@@ -484,9 +484,12 @@ $color-jaune: #ffb703;
 
 }
 .carousel {
-   div{
-      width: 90%;
+   > div{
+      width: 99%;
       margin: auto;
+      border: 1px solid $color-vert;
+      padding: 10px;
+      border-radius: 4px;
      section:nth-child(1){
       float: left;
       width: 50%;
@@ -675,9 +678,11 @@ $color-jaune: #ffb703;
 }
 
 //ACTUALITE
+
 .carousel {
    div{
       width: 98%;
+      border: none;
      section:nth-child(1){
       width: 100%;
       float: none;
@@ -689,7 +694,12 @@ $color-jaune: #ffb703;
      }
    }
 }
+.carousel-image,  .video-carousel {
+   width: 100%;
+   height: 200px;
+ }
 }
+
 
 /*@media screen and (max-width: 600px) {
    .date-voyage ,#passagere {

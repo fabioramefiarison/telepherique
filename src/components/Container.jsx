@@ -59,7 +59,7 @@ function Container() {
   });
 
   return (
-    <div id='container-container'>
+    <div id='container-container' className="reveal">
       <h1>Voyager avec la téléphérique <br />d'ANTANANARIVE</h1>
       <div className='container-cont'>
         <section >

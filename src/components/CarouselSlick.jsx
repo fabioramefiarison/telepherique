@@ -14,7 +14,7 @@ const CarouselSlick = ({ images }) => {
   };
 
   return (
-    <div className="carousel">
+    <div className="carousel" >
       <Slider {...settings}>
         {images.map((image, index) => (
           <div key={index}>

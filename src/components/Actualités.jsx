@@ -13,7 +13,7 @@ const lesImages = [
 ]
 function Actualités() {
   return (
-    <div id='Actualites'>
+    <div id='Actualites' className="reveal">
         <h1>ACTUALITES</h1>
         <h3>N'est pas rater nos informations 24/24 heures</h3>
         <Carousel 
