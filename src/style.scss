@@ -415,7 +415,7 @@ $color-jaune: #ffb703;
    }
    img{
       width: 100%;
-      height: 210px;
+      height: 220px;
       border-radius: 4px;
       margin-bottom: 5px;
    }
@@ -427,11 +427,15 @@ $color-jaune: #ffb703;
    }
    
       a{
-         background-color: $red-background;
-         padding: 3px;  
+         background-color: $red-background; 
          border-radius: 4px;  
          text-decoration: none;
          color: white;
+         display: block;
+         width: 100px;
+         padding: 3px;
+         text-align: center;
+         position: relative;
          &:hover{
              opacity: 0.8;
          }
@@ -446,7 +450,7 @@ $color-jaune: #ffb703;
 
 
 
-/****************** ACTUALIT2 ******************/
+/****************** ACTUALITE ******************/
 #Actualites{
    width: 99%;
    margin: 70px auto;
@@ -475,7 +479,7 @@ $color-jaune: #ffb703;
      }
    h3{
       text-align: center;
-      margin-bottom: 50px;
+      margin-bottom: 70px;
    }
 
 }
@@ -489,25 +493,25 @@ $color-jaune: #ffb703;
      }
      section:nth-child(2){
       float: right;
+      
      }
    }
   }
   .carousel-h1-date{
+   margin-left: 0 !important;
    display: flex;
-   justify-content: space-between;
    h1{
-      text-align: left !important;
+
       margin-bottom: 5px;
       color: $color-vert !important;
    }
   }
-  .carousel-image {
+  .carousel-image,  .video-carousel {
     width: 400px;
     height: 300px;
     border-radius: 10px;
   }
- 
-  
+
 
 /***************** TABLET *****************/
 @media screen and (max-width: 1000px) {

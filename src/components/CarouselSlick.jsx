@@ -10,7 +10,7 @@ const CarouselSlick = ({ images }) => {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 7000,
+    autoplaySpeed: 8000,
   };
 
   return (
@@ -26,7 +26,11 @@ const CarouselSlick = ({ images }) => {
                 <p>{image.paragraphe}</p>
               </section>
            <section>
-              <img src={image.image} alt={`Slide ${index}`} className="carousel-image" />  
+            {image.image ?
+             (<img src={image.image} alt={`Slide ${index}`} className="carousel-image" /> ) 
+             : (<video src={image.video} controls
+             className='video-carousel'></video>)
+          }
            </section>
           </div>
         ))}
