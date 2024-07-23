@@ -6,8 +6,7 @@ import "./font awesome/all.min.css"
 import Baniere from "./components/Baniere";
 import PopularPlace from "./components/PopularPlace";
 import Actualités from "./components/Actualités";
-
-
+import Contact from "./components/Contact";
 
 const Div = styled.div`
   color: #deeaee;
@@ -24,6 +23,7 @@ function App() {
           <Baniere/>
           <PopularPlace/>
           <Actualités/>
+          <Contact/>
         </Div>
     )
 }
