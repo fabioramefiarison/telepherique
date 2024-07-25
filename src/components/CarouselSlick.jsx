@@ -28,8 +28,9 @@ const CarouselSlick = ({ images }) => {
            <section>
             {image.image ?
              (<img src={image.image} alt={`Slide ${index}`} className="carousel-image" /> ) 
-             : (<video src={image.video} controls
-             className='video-carousel'></video>)
+             : (<video src={image.video} autoplay controls
+             className='video-carousel'
+             ></video>)
           }
            </section>
           </div>

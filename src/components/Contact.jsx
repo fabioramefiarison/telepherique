@@ -2,50 +2,54 @@ import React from 'react'
 
 function Contact() {
   return (
-   <div class="container">
-   <form action="https://www.w3schools.com/action_page.php">
-     <div class="row">
-       <div class="col-25">
-         <label for="fname">First Name</label>
-       </div>
-       <div class="col-75">
-         <input type="text" id="fname" name="firstname" placeholder="Your name..">
-       </div>
-     </div>
-     <div class="row">
-       <div class="col-25">
-         <label for="lname">Last Name</label>
-       </div>
-       <div class="col-75">
-         <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-       </div>
-     </div>
-     <div class="row">
-       <div class="col-25">
-         <label for="country">Country</label>
-       </div>
-       <div class="col-75">
-         <select id="country" name="country">
-           <option value="australia">Australia</option>
-           <option value="canada">Canada</option>
-           <option value="usa">USA</option>
-         </select>
-       </div>
-     </div>
-     <div class="row">
-       <div class="col-25">
-         <label for="subject">Subject</label>
-       </div>
-       <div class="col-75">
-         <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-       </div>
-     </div>
-     <div class="row">
-       <input type="submit" value="Submit">
-     </div>
-   </form>
- </div>
- 
+    <div id='contact'>    
+<h1>Contact</h1>
+<p>Pour les remarque et commentaire</p>
+
+<div class="container">
+  <form action="">
+    <div class="row">
+      <div class="col-25">
+        <label for="fname">Prenom :</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="fname" name="firstname" placeholder="votre prénom.." required/>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="lname">E-mail :</label>
+      </div>
+      <div class="col-75">
+        <input type="email" id="lname" name="lastname" placeholder="votre @email.." required/>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="country">Type :</label>
+      </div>
+      <div class="col-75">
+        <select id="country" name="country">
+          <option value="australia" class="option" >Commentaire</option>
+          <option value="canada" class="option" >Remarque</option>
+          <option value="usa" class="option" >Autre</option>
+        </select>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="subject">Motif :</label>
+      </div>
+      <div class="col-75">
+        <textarea id="subject" name="subject" placeholder="Ecrire quelque chose.." ></textarea>
+      </div>
+    </div>
+    <div class="row">
+      <input type="submit" value="Envoyer"/>
+    </div>
+  </form>
+</div>
+    </div>
   )
 }
 

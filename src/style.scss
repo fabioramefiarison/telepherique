@@ -1,15 +1,18 @@
+
 *{
    margin: 0;
    padding: 0;
    box-sizing: border-box;
-   font-family: tahoma;
+   font-family: Georgia, sans-serif;
 }
+
 $main-text: #003049;
 $red-background: #d62828;
 $color-vert: #0a9395; 
 $color-jaune: #ffb703;
+
 #all{
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 }
 #container-baniere{
    background-image: url("./images/telepherique.jpg");
@@ -149,7 +152,8 @@ $color-jaune: #ffb703;
 
 
 #container-container {
-   margin: 373px auto auto auto;
+   overflow: hidden !important;
+   margin: 358px auto auto auto;
    div{
        h3{
            color: $color-vert; 
@@ -157,7 +161,7 @@ $color-jaune: #ffb703;
    }
    h1{
       color: white;
-      transform: translate(10px, -2vw);
+      transform: translate(10px, -0.5vw);
 }
 }
 .container-cont{
@@ -485,9 +489,8 @@ $color-jaune: #ffb703;
 }
 .carousel {
    > div{
-      width: 99%;
+      width: 90%;
       margin: auto;
-      border: 1px solid $color-vert;
       padding: 10px;
       border-radius: 4px;
      section:nth-child(1){
@@ -516,6 +519,99 @@ $color-jaune: #ffb703;
   }
 
 
+  /*************contact****************/
+  #contact{
+   width: 90%;
+   margin: 200px auto;
+   h1{
+      color: $color-jaune;
+      text-align: center;
+      &::before{
+         content: "";
+         display: block;
+         height: 5px;
+         width: 5vw;
+         background-color: $color-jaune;
+         margin: auto;
+         transform: translate(-180px, 23px);
+      }
+      &::after{
+         content: "";
+         display: block;
+         height: 5px;
+         width: 5vw;
+         background-color: $color-jaune;
+         margin: auto;
+         transform: translate(180px, -23px);
+      }
+   }
+   p{
+      color: $main-text;
+      text-align: center;
+      margin-bottom: 20px;
+   }
+  }
+input[type=email] ,input[type=text], select, textarea {
+   width: 100%;
+   padding: 12px;
+   border: 1px solid #ccc;
+   border-radius: 4px;
+   resize: vertical;
+ }
+ 
+ label {
+   padding: 12px 12px 12px 0;
+   display: inline-block;
+ }
+ 
+ input[type=submit] {
+   background-color: $color-vert;
+   color: white;
+   padding: 12px 20px;
+   border: none;
+   border-radius: 4px;
+   cursor: pointer;
+   float: right;
+ }
+ 
+ input[type=submit]:hover {
+   opacity: 0.8;
+ }
+ .option {
+   text-align: center;
+   font-size: 18px;
+   background-color: $color-jaune;
+   color: white;
+ }
+ .container {
+   border-radius: 5px;
+   padding: 20px;
+   label{
+      color: $main-text;
+   }
+ }
+ 
+ .col-25 {
+   float: left;
+   width: 25%;
+   margin-top: 6px;
+ }
+ 
+ .col-75 {
+   float: left;
+   width: 75%;
+   margin-top: 6px;
+ }
+ 
+ /* Clear floats after the columns */
+ .row:after {
+   content: "";
+   display: table;
+   clear: both;
+ }
+
+
+
 /***************** TABLET *****************/
 @media screen and (max-width: 1000px) {
    #container-header nav {
@@ -529,7 +625,6 @@ $color-jaune: #ffb703;
       font-size: 12px;
    }
 }
-
 
 
 /******************* MOBILE ***********************/
@@ -698,6 +793,14 @@ $color-jaune: #ffb703;
    width: 100%;
    height: 200px;
  }
+
+ //contact
+ 
+   .col-25, .col-75, input[type=submit] {
+     width: 100%;
+     margin-top: 0;
+   }
+
 }
 
 
