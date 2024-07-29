@@ -20,7 +20,7 @@ $color-jaune: #ffb703;
    background-repeat: no-repeat;
    width: 99%;
    height: 100vh;
-   overflow-x: hidden;
+   overflow: hidden;
    margin: auto;
    border-radius: 4px;
 }
@@ -615,6 +615,15 @@ input[type=email] ,input[type=text], select, textarea {
    clear: both;
  }
 
+
+ /* chargement*/
+ .chargement{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+   background-image: linear-gradient(to left, white, $color-vert);
+ }
 
 
 /***************** TABLET *****************/

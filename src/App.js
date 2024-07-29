@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./style.scss";
 import styled from "styled-components"
+import ReactLoading from "react-loading"
 import font from "./font/framd.ttf";
 import "./font awesome/all.min.css"
 import Baniere from "./components/Baniere";
@@ -18,12 +19,28 @@ const Div = styled.div`
 }
 `
 function App() {
+  const [loading, setLoading] = useState(true)
+
+  useEffect( ()=> {
+    const timer = setTimeout( ()=> {
+      setLoading(false)
+    }, 4000)
+    return () => clearTimeout(timer)
+  }, [])
     return (
         <Div id="all">
-          <Baniere/>
-          <PopularPlace/>
-          <Actualités/>
-          <Contact/>
+          {loading ? 
+            (<Div className="chargement">
+              <ReactLoading type="bars" color="yellow" height={100} width={100}/>
+            </Div>)
+          : (
+            <Div id="all">
+              <Baniere/>
+              <PopularPlace/>
+              <Actualités/>
+              <Contact/>
+            </Div>
+          )}
         </Div>
     )
 }

@@ -16,7 +16,7 @@ function PopularPlace() {
       <h1>
       <i className='fas fa-hotel'></i>{t("HotelRestaurant.h1")}
       </h1>
-      <h3>{t("HotelRestaurant.h3")}</h3>
+      <h3>{t("HotelRestaurant.h2")}</h3>
         <section>
         <CardPlace 
         img={ibis}
