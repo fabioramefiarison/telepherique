@@ -62,7 +62,7 @@ useEffect(() => {
          <nav className="logo">
             <img src={drapeau} alt="drapeau Malagasy" 
             style={{marginRight: '5px'}}/>
-            <span>Télepherique</span>
+            <span>{t("header.txtLogo")}</span>
          </nav>
          <nav>
             <ul className={ulDisplay ? "ul-display" : ""}>
@@ -79,7 +79,7 @@ useEffect(() => {
          </nav>
          <nav id="chearch-bar"
         className={ulDisplay ? "searchResp" : ""}>
-            <input type="search" placeholder="rechercher"/>
+            <input type="search" placeholder={t("header.searchBar")}/>
             <i className="fas fa-search"></i>
          </nav>
          <nav className="switch-lang">

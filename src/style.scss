@@ -3,7 +3,7 @@
    margin: 0;
    padding: 0;
    box-sizing: border-box;
-   font-family: Georgia, sans-serif;
+   font-family: Georgia;
 }
 
 $main-text: #003049;
@@ -160,8 +160,13 @@ $color-jaune: #ffb703;
    }
    }
    h1{
-      color: white;
+      color: $color-vert;
       transform: translate(10px, -0.5vw);
+      width: 50%;
+      background-color: rgba(255, 255, 255, 0.655);
+      padding: 5px;
+      border-radius: 6px !important;
+      text-wrap: wrap;
 }
 }
 .container-cont{
@@ -178,7 +183,7 @@ $color-jaune: #ffb703;
    padding: 10px;
    border-radius: 50px;
    background-color: white;
-   color:$red-background;
+   color: $red-background;
    font-weight: bold;
    position: relative;
    margin-left: 60%;
@@ -652,6 +657,7 @@ input[type=email] ,input[type=text], select, textarea {
 }
 #container-container h1{
    margin-bottom: 40px;
+   width: 95%;
 }
 #container-header{
    padding: 10px 10px;
@@ -676,6 +682,7 @@ input[type=email] ,input[type=text], select, textarea {
    margin-bottom: 15px;
 
 }
+
 #chearch-bar{
    position: absolute;
    width: 200px;

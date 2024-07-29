@@ -1,13 +1,64 @@
 {
   
   "header": {
+      "txtLogo": "Telepherique",
       "li1": "Acceuil", 
       "li2": "Restaurant", 
       "li3": "Apropos",
       "li4": "Contact", 
       "language": "FR",
+      "searchBar": "rechercher",
       "btnInscrire": "S'inscrire",
       "btnConnecter": "Connecter" 
-  }
+  },
 
+  "container": {
+    "h1": "Voyager avec la télépherique d'ANTANANARIVE",
+    "h3": "Trouver votre trajet",
+    "from": "DE",
+    "to": "A",
+    "DateDepart": "Date de départ",
+    "placeHolderDateDepart": "date et heure",
+    "passager": "passager(ère)",
+    "placeholderPassager": "nombre de passager",
+    "btnValider": "Valider mon trajet",
+    "btnImprimer": "Imprimer" 
+  },
+
+  "HotelRestaurant": {
+    "h1": "Hôtel, Restaurant",
+    "h2": "Les endroits les plus populaires en ce moment",
+    "distanceTxt1": "à peine ",
+    "distanceTxt2": "mètres",
+    "btnConsulter": "CONSULTER",
+    "prix": "A partir de"
+  },
+
+  "Actualites": {
+    "h1": "ACTUALITES",
+    "h2": "Ne pas rater nos information 24/24 heures",
+    "actus1Titre": "Antananarivo accueillera bientôt sa première ligne de téléphérique",
+    "actus1Paragraphe": "Les deux premières stations du réseau desservant Antananarivo sont désormais achevées. La première station, située près du lac Anosy au bas du centre-ville, est prête, tout comme la seconde, implantée sur la ville haute à proximité de la place du 13 mai. Il ne reste plus qu’à les relier par les câbles pour permettre les essais du premier tronçon.Ce téléphérique facilitera le trajet entre ces deux points de la capitale en quelques minutes seulement, offrant une alternative aux rues pavées, tortueuses et souvent encombrées. Cependant, malgré les avancées, de nombreux pylônes manquent encore sur le reste du chantier. Par ailleurs, les résidents de la capitale demeurent dans l’attente des tarifs qui seront mis en place. Une autre préoccupation concerne la fourniture électrique, souvent instable à Antananarivo. Si cette situation ne s’améliore pas, les passagers pourraient se retrouver bloqués pendant des heures dans les cabines suspendues.",
+    "actus2Titre": "Le télépherique séduit ses premiers passagers",
+    "actus2Paragraphe": "Le premier test avec passagers du télépherique à été effectué hier sur le trajet Anosy-soarano. Les premiers clients de ce transport par câble, parmi lesquels le président de la République, ont été satisfaits de cet essai",
+    "actus3Titre": "Téléphérique : Trois cabines en phase de test",
+    "actus3Paragraphe": "Le projet téléphérique entame la dernière phase avant le lancement officiel de l’exploitation de la ligne reliant Anosy et Soarano, prévu le 26 juin 2024.Il s’agit du test des cabines sur les câbles. Trois cabines vides ont ainsi été lancées par le Secrétariat d’Etat en charge des Nouvelles Villes et de l’Habitat, mercredi dernier à Anosy. Elles vont effectuer des allers-retours sur cet axe pendant quelques jours, et ce, avec une vitesse moyenne de 4 mètres par seconde afin d’assurer toutes les vérifications techniques surtout les éventuelles défaillances ainsi que les derniers réglages, a-t-on appris."
+   },
+   
+   "Contact": {
+    "h1": "CONTACT",
+    "h2": "Pour les remarques et les commentaires",
+    "firstname": "Prénom",
+    "placeholderFirstName": "votre nom..",
+    "Mail": "E-mail",
+    "placeholderMail": "votre @mail..",
+    "Type": {
+      "commentary": "commentaire",
+      "remarque": "remarque",
+      "other": "autre" 
+    },
+    "motif": "Motif",
+    "placeholderMotif": "écrire quelque chose",
+    "btnEnvoyer": "ENVOYER"
+   }
 }

@@ -1,5 +1,6 @@
 import React, { useState, useRef } from 'react';
 import Dropdown from "./Dropdown";
+import { useTranslation } from "react-i18next";
 import DatePicker from 'react-datepicker';
 import "react-datepicker/dist/react-datepicker.css";
 import { isAfter } from 'date-fns';
@@ -7,6 +8,7 @@ import { useReactToPrint } from 'react-to-print';
 import Ticket from './Ticket';
 
 function Container() {
+  const [t, i18n] = useTranslation("global");
   const options = ['Anosy', 'Analakely', 'Ankorondrano', 'Analamahitsy', 'Ambatobe', 'Ankatso'];
   const [selectedOption1, setSelectedOption1] = useState('Anosy');
   const [selectedOption2, setSelectedOption2] = useState('Ambatobe');
@@ -60,10 +62,10 @@ function Container() {
 
   return (
     <div id='container-container' className="reveal">
-      <h1>Voyager avec la téléphérique <br />d'ANTANANARIVE</h1>
+      <h1>{t("container.h1")}</h1>
       <div className='container-cont'>
         <section >
-          <h3>Trouver votre trajet</h3>
+          <h3>{t("container.h3")}</h3>
           <ul>
             <li>Ambatobe</li>
             <li>Analamahitsy</li>
@@ -75,7 +77,7 @@ function Container() {
         </section>
         <section className='section2'>
           <div>
-            <label><strong>DE :</strong></label>
+            <label><strong>{t("container.from")}:</strong></label>
             <Dropdown
               options={options}
               selectedOption={selectedOption2}
@@ -87,7 +89,7 @@ function Container() {
             <i className='fas fa-sync'></i>
           </div>
           <div>
-            <label><strong>A :</strong></label>
+            <label><strong>{t("container.to")}</strong></label>
             <Dropdown
               options={options}
               selectedOption={selectedOption1}
@@ -96,7 +98,7 @@ function Container() {
             />
           </div>
           <div>
-            <label><strong>Date de départ :</strong></label>
+            <label><strong>{t("container.DateDepart")} :</strong></label>
             <DatePicker
               selected={selectedDate}
               onChange={handleChange}
@@ -104,7 +106,7 @@ function Container() {
               timeFormat="HH:mm"
               timeCaption="heure"
               dateFormat="Pp"
-              placeholderText='date et heure'
+              placeholderText={t("container.placeHolderDateDepart")}
               className='date-voyage'
             />
           </div>
@@ -112,14 +114,14 @@ function Container() {
             <i className='fas fa-sync'></i>
           </div>
           <div>
-            <label><strong>passager :</strong></label>
+            <label><strong>{t("container.passager")} :</strong></label>
             <div id='passagere'>
               <input 
                 type="number" 
                 min={1}
                 onChange={handleNumberChange}
                 value={nombrePers} 
-                placeholder='nombre de passagers'
+                placeholder={t("container.placeholderPassager")}
               />
               <i className='fas fa-chevron-circle-down'></i>
             </div>
@@ -129,7 +131,7 @@ function Container() {
           <div>
             <input 
               type="button"
-              value="Valider mon trajet" 
+              value={t("container.btnValider")} 
               id='btn-valider-trajet'
               onClick={handleSubmit}
             />
@@ -139,7 +141,7 @@ function Container() {
         <button
         onClick={handlePrint} 
         id='btn-imprimer'
-        style={btnImprimer ? {display: 'block'}: {display: 'none'}}>Imprimer</button>
+        style={btnImprimer ? {display: 'block'}: {display: 'none'}}>{t("container.btnImprimer")}</button>
       </div>
       <Ticket 
         ref={componentRef} 

@@ -1,13 +1,65 @@
 {
   
   "header": {
+      "txtLogo": "Teleferika",
       "li1": "Fandraisana", 
       "li2": "Fisakafoanana", 
       "li3": "MombaMomba",
       "li4": "Fifandraisana", 
       "language": "MG",
+      "searchBar": "Tadiavo",
       "btnInscrire": "Hamorona",
       "btnConnecter": "hiditra" 
-  }
+  },
+  
+  "container": {
+    "h1": "Fitsangatsanganana miaraka amin'ny fiara fitaterana an-tariby Antananarivo",
+    "h3": "Tadiavo ny lalanao",
+    "from": "MANOMBOKA",
+    "to": "KA HATRANY",
+    "DateDepart": "Daty fihaingàna",
+    "placeHolderDateDepart": "daty sy hora",
+    "passager": "Mpandeha",
+    "placeholderPassager": "isan'ny mpandeha",
+    "btnValider": "Manamarina ny diako",
+    "btnImprimer": "Imprimena" 
+  },
 
+  "HotelRestaurant": {
+    "h1": "Hotely, toerana fisakafoanana",
+    "h2": "Ny toerana malaza indrindra amin'izao fotoana izao",
+    "distanceTxt1": "zara raha misy ",
+    "distanceTxt2": "metatra",
+    "btnConsulter": "LIANA",
+    "prix": "Manomboka @ "
+  },
+
+  "Actualites": {
+    "h1": "VAOVAO",
+    "h2": "Aza adino ny fampahalalana momba ny 24 ora",
+    "actus1Titre": "Tsy ho ela Antananarivo dia handray ny zotra voalohany amin'ny fiara mandeha amin'ny tariby.",
+    "actus1Paragraphe": "Efa vita avokoa ankehitriny ireo toby roa voalohany ao amin'ny tambajotra miasa eto Antananarivo . Ny gara voalohany, miorina eo akaikin'ny Farihy Anosy eo amin'ny farany ambany afovoan-tanàna, dia vonona, toy ny faharoa, hita ao amin'ny tanàna ambony akaikin'ny Place du 13 Mai. Ny hany sisa tavela dia ny mampifandray azy ireo amin'ny alalan'ny tariby mba hamela ny fitsapana ny fizarana voalohany. Ity fiara mandeha amin'ny tariby ity dia hanamora ny fidirana eo anelanelan'ireo teboka roa ao an-drenivohitra ireo ao anatin'ny minitra vitsy monja, manolotra safidy hafa ho an'ireo arabe miolikolika sy  Masiaka sy matetika feno olona. Na izany aza, na dia eo aza ny fandrosoana, maro ireo pylons no mbola tsy hita ao amin'ny sisa amin'ny tranonkala. Ankoatra izany, mbola miandry ny taha izay hapetraka ny mponina ao an-drenivohitra. Olana iray hafa ny famatsiana herinaratra, izay matetika tsy marin-toerana eto Antananarivo. Raha tsy mihatsara izany toe-javatra izany, dia mety ho tafahitsoka mandritra ny ora maro ao amin'ny cabins naato ireo mpandeha.",
+    "actus2Titre": "Ny fiara mandeha amin'ny tariby dia manintona ny mpandeha voalohany",
+    "actus2Paragraphe": "Ny fitsapana voalohany niaraka tamin'ireo mpandeha tamin'ny fiaran-dalamby dia natao omaly tao amin'ny lalana Anosy-savony. Ireo mpanjifa voalohany tamin'ity fitaterana an-tariby ity, anisan'izany ny Filohan'ny Repoblika, dia afa-po tamin'ity fitsarana ity",
+    "actus3Titre": "Fiara mandeha amin'ny tariby: cabins telo ao anatin'ny dingan'ny fitsapam-pahaizana",
+    "actus3Paragraphe": "Miditra amin'ny dingana farany ny tetikasan'ny fiara mandeha amin'ny tariby alohan'ny fanombohana amin'ny fomba ofisialy ny fiasan'ny tsipika eo anelanelan'i Anosy sy Soarano, izay kasaina hatao amin'ny 26 Jona 2024.Il dia ny fitsapana ny cabins amin'ny tariby. Trano heva telo foana no natomboky ny Sekreteram-panjakana miandraikitra ny Tanàna Vaovao sy ny Fonenana, ny Alarobia lasa teo tao Anosy. Hiverina sy hiverina amin'ity famaky ity mandritra ny andro vitsivitsy izy ireo."
+   },
+   
+   "Contact": {
+    "h1": "FIFANDRAISANA",
+    "h2": "Ho an'ny fanamarihana sy ny fanehoan-kevitra",
+    "firstname": "Anarana",
+    "placeholderFirstName": "eto ny anaranao",
+    "Mail": "Mailaka",
+    "placeholderMail": "eto ny adiresy mailaka anao..",
+    "Type": {
+      "commentary": "fanehoan-kevitra",
+      "remarque": "fanamarihana",
+      "other": "hafa" 
+    },
+    "motif": "Motifa",
+    "placeholderMotif": "manorata..",
+    "btnEnvoyer": "ALEFA"
+   }
+   
 }

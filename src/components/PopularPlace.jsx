@@ -1,4 +1,5 @@
 import React from 'react'
+import { useTranslation } from "react-i18next";
 import ibis from "./../images/ibis.jpg"
 import carlton from "./../images/carlton.jpg"
 import gastro from "./../images/gastropizza.jpeg"
@@ -8,12 +9,14 @@ import pietra from "./../images/gastro-pizza-analakely1.jpg"
 import CardPlace from './CardPlace'
 
 function PopularPlace() {
+  const [t, i18n] = useTranslation("global");
+
   return (
     <div id='PopularPlace' className="reveal">
       <h1>
-      <i className='fas fa-hotel'></i> Hôtel, Restaurant et Lieux
+      <i className='fas fa-hotel'></i>{t("HotelRestaurant.h1")}
       </h1>
-      <h3>Les endroits les plus populaires en ce moment</h3>
+      <h3>{t("HotelRestaurant.h3")}</h3>
         <section>
         <CardPlace 
         img={ibis}
