@@ -35,10 +35,10 @@ function App() {
             </Div>)
           : (
             <Div id="all">
-              <Baniere/>
-              <PopularPlace/>
-              <Actualités/>
-              <Contact/>
+              <Baniere id="container-baniere"/>
+              <PopularPlace id="PopularPlace"/>
+              <Actualités id="Actualites"/>
+              <Contact id="contact"/>
             </Div>
           )}
         </Div>

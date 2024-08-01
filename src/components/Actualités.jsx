@@ -8,7 +8,7 @@ import img2 from "./../images/CABLE.jpg"
 import video1 from "./../vidéo/TRANSPORT PAR CABLE - Début des tests de cabine de téléphérique avant le lancement officiel.mp4"
 
 
-function Actualités() {
+function Actualités({id}) {
   const [t, i18n] = useTranslation("global");
   const lesImages = [
     {image: img1, titre: t('Actualites.actus1Titre'), paragraphe: t("Actualites.actus1Paragraphe")},
@@ -17,7 +17,7 @@ function Actualités() {
   ]
 
   return (
-    <div id='Actualites' className="reveal">
+    <div id={id} className="reveal">
         <h1>{t("Actualites.h1")}</h1>
         <h3>{t("Actualites.h2")}</h3>
         <Carousel 

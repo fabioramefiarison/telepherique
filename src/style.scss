@@ -12,7 +12,7 @@ $color-vert: #0a9395;
 $color-jaune: #ffb703;
 
 #all{
-  overflow-x: hidden !important;
+  overflow: hidden !important;
 }
 #container-baniere{
    background-image: url("./images/telepherique.jpg");
@@ -20,7 +20,7 @@ $color-jaune: #ffb703;
    background-repeat: no-repeat;
    width: 99%;
    height: 100vh;
-   overflow: hidden;
+   overflow: hidden !important;
    margin: auto;
    border-radius: 4px;
 }
@@ -527,7 +527,7 @@ $color-jaune: #ffb703;
   /*************contact****************/
   #contact{
    width: 90%;
-   margin: 200px auto;
+   margin: 200px auto 20px auto;
    h1{
       color: $color-jaune;
       text-align: center;
@@ -622,7 +622,7 @@ input[type=email] ,input[type=text], select, textarea {
    justify-content: center;
    align-items: center;
    height: 100vh;
-   background-image: linear-gradient(to left, white, $color-vert);
+   background-color:  white;
  }
 
 
@@ -778,6 +778,7 @@ input[type=email] ,input[type=text], select, textarea {
       width: 35vw;
       height: 30px;  
    }
+
 }
 
 //POpular place
@@ -816,7 +817,10 @@ input[type=email] ,input[type=text], select, textarea {
      width: 100%;
      margin-top: 0;
    }
-
+  #contact{
+   width: 96%;
+   margin: 200px auto 5px auto;
+}
 }
 
 
